@@ -1,7 +1,7 @@
 from ConnectCouch import connectCouch
 
 speaker = {
-    "speaker" : {
+    "speaker_new" : {
         "seek" : "int",
         "volume" : "float",
         "play" : "boolean",
@@ -23,8 +23,8 @@ s = {
     "sensorid" : "sensorid",
     "sensorurl" : "<public-IP of intermediate server>",
     "Location" : "<A1:A2:A3....>",
-    "sensorType" : "<SensorTypeName>",
-    "sensorurl" : "<public-IP of intermediate server>"
+    "sensorType" : "speaker"
 }
 
-connectCouch.Registration(speaker, s)
+print(connectCouch.sensorTypeRegistration(speaker))
+print(connectCouch.SensorInstanceRegistration(s))
