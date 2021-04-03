@@ -29,6 +29,7 @@ class ConnectCouch(object):
         sensorTypesPresent = self.GetAllSensorTypes()
         if()
 
+connectCouch = ConnectCouch()
 
 # Creating Database
 db = database["sensor_database"]
